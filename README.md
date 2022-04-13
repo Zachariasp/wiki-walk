@@ -37,3 +37,14 @@ USER_ID,
 COUNT,
 WORDS_ARRAY,
 DATE
+
+# Technology
+## UI
+TypeScript
+React
+## API
+Python
+Flask
+## Server
+Apache
+postgres
