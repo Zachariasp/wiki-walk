@@ -40,11 +40,11 @@ DATE
 
 # Technology
 ## UI
-TypeScript
-React
+TypeScript and React
+
 ## API
-Python
-Flask
+Python Flask
+Tutorial: https://pythonbasics.org/what-is-flask-python/
+
 ## Server
-Apache
-postgres
+Apache and postgres
