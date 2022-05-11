@@ -48,3 +48,14 @@ Tutorial: https://pythonbasics.org/what-is-flask-python/
 
 ## Server
 Apache and postgres
+
+
+# For Next Time...
+### On the API
+Install wiki api python package
+
+make a route to fetch a single article and return a list of words and weights
+
+### On the UI
+connect to the api route and collect the (word, weight) list
+feed the list to the Word Cloud component
