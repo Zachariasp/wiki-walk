@@ -1,38 +1,47 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-*/node_modules
-*/.pnp
-*/.pnp.js
+ui/node_modules
+ui/.pnp
+ui/.pnp.js
+*/package-lock.json
 
 # testing
-/coverage
+ui/coverage
 
 # production
-/build
+ui/build
 
 # misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+*/.DS_Store
+*/.env.local
+*/.env.development.local
+*/.env.test.local
+*/.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+*/npm-debug.log*
+*/yarn-debug.log*
+*/yarn-error.log*
 
 # IDE metadata
 /.idea/
 /.vscode/
 
 # python
-*/__pycache__/
+api/__pycache__/
 *.py[cod]
-.python-version
-venv/
+api/.python-version
+api/venv/
 
 # Flask
-instance/*
+api/instance/*
 !instance/.gitignore
-.webassets-cache
+api/.webassets-cache
+
+api/.pytest_cache/
+api/.coverage
+api/htmlcov/
+
+api/dist/
+api/build/
+api/*.egg-info/
