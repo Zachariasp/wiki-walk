@@ -1,5 +1,5 @@
 module.exports = {
-    cloudData: [
+    data: [
         { value: 'JavaScript', count: 38 },
         { value: 'React', count: 30 },
         { value: 'Nodejs', count: 28 },
@@ -8,5 +8,6 @@ module.exports = {
         { value: 'MongoDB', count: 18 },
         { value: 'CSS3', count: 20 },
       ],
-    cloudStart: "Languages"
+    start: "Languages",
+    finish: "Rasputin"
 };

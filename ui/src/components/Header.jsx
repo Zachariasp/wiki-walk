@@ -4,7 +4,7 @@ function Header() {
 
     return(
             <div className="App-header">
-                <p>Your word is: {cloudStart}</p>
+                <p>Welcome to WikiWalk</p>
             </div> 
         )
     };

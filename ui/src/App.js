@@ -1,25 +1,29 @@
-import './App.css';
+import './App.scss';
 import { TagCloud } from 'react-tagcloud';
-import { cloudData } from './Word-Cloud/cloudData';
 import Footer from "./components/Footer";
 import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+
+const cloudData = require('./Word-Cloud/cloudData');
 
 function App() {
-  
+
+
   const SimpleCloud = () => (
     <TagCloud
       minSize={12}
       maxSize={35}
-      tags={cloudData}
-      onClick={tag => alert(`'${tag.value}' was selected!`)}
+      tags={cloudData.data}
     />
   );
   
   return (
     <div className="App">
       <Header />
-      <SimpleCloud />
+      <Sidebar start={cloudData.start} finish={cloudData.finish} />
+      <SimpleCloud  className="App__Screen__SimpleCloud"/>
       <Footer />
+
     </div>
   );
 }
