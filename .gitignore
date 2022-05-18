@@ -1,1 +1,17 @@
-api/__pycache__/app.cpython-310.pyc
+# misc
+.DS_Store
+
+# IDE metadata
+/.idea/
+/.vscode/
+
+# python
+*/__pycache__/
+*.py[cod]
+.python-version
+venv/
+
+# Flask
+instance/*
+!instance/.gitignore
+.webassets-cache
