@@ -29,7 +29,8 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World!'
 
-    from . import icons
+    from . import icons, wiki
     app.register_blueprint(icons.blueprint)
+    app.register_blueprint(wiki.blueprint)
 
     return app
