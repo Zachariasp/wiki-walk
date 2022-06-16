@@ -32,6 +32,7 @@ api/__pycache__/
 *.py[cod]
 api/.python-version
 api/venv/
+venv/
 
 # Flask
 api/instance/*

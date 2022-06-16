@@ -1,18 +1,13 @@
-from flask import Flask, send_from_directory
-import os
+from flask import Blueprint
 import wikipediaapi
 
-app = Flask(__name__)
+blueprint = Blueprint('wiki', __name__, url_prefix='/wiki')
 
-@app.route("/")
+@blueprint.route("/")
 def hello():
     text = "Hello, World!"
     text += getPage()
     return text
-
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico',mimetype='image/vnd.microsoft.icon')
 
 def getPage():
     wiki = wikipediaapi.Wikipedia('en', wikipediaapi.ExtractFormat.HTML)
