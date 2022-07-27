@@ -24,10 +24,11 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    # a simple page that says hello
-    @app.route('/hello')
-    def hello():
-        return 'Hello, World!'
+    # This endpoint can be monitored, so we can be notified if the app goes down.
+    @app.route('/health-check')
+    def health_check():
+        # as the app grows, add more code in here for checking that everything is healthy
+        return 'Status: Healthy'
 
     from . import icons, wiki
     app.register_blueprint(icons.blueprint)

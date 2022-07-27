@@ -11,6 +11,6 @@ def hello():
 
 def getPage():
     wiki = wikipediaapi.Wikipedia('en', wikipediaapi.ExtractFormat.HTML)
-    page = wiki.page('frog') #frog time :)
+    page = wiki.page('frog')  # frog time :)
     page_text = page.text
     return page_text
