@@ -1,16 +1,38 @@
 .App {
   text-align: center;
+
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 5vh;
+  height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.window {
+  display: flex;
+  flex-direction: row;
+}
+.App-sidebar {
+  background-color: #282c34;
+  word-wrap: break-word;
+  width: 20vw;
+  height: 60vw;
+  color: white;
+
+  p {
+    font-size: 2vw;
+    padding: 1vw;
+  }
+}
+
+.tag-cloud {
+width: 80%;
 }
 
 .App-footer {
