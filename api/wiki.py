@@ -5,7 +5,7 @@ blueprint = Blueprint('wiki', __name__, url_prefix='/wiki')
 
 @blueprint.route("/")
 def hello():
-    text = "Hello, World!"
+    text = "Hello, World! "
     text += get_links_from_page('frog')
     return text
 
@@ -18,6 +18,9 @@ def get_page():
 def get_links_from_page(title):
     wiki = wikipediaapi.Wikipedia('en', wikipediaapi.ExtractFormat.HTML)
     page = wiki.page(title)
-    pageLinks = str(page.links)
-
-    return pageLinks
+    pageLinks = page.links
+    pageLinkTitles = ""
+    for pageLink in pageLinks:
+        pageLinks[pageLink].backlinks
+        pageLinkTitles += "["+ pageLinks[pageLink].title + "]    "
+    return pageLinkTitles
