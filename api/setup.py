@@ -6,8 +6,6 @@ setup(
     author='Daniel Callahan, James Mayo, and Zacharias Shufflebarger',
     description='A word cloud game',
     long_description='Walk from one Wikipedia article to a target article in as few steps as possible!',
-    # url='https://medium.com/@gmyrianthous',
-    # keywords='sample, example, setuptools',
     python_requires='~=3.10.4',
     install_requires=[
         'certifi~=2022.6.15',
@@ -24,15 +22,4 @@ setup(
         'Werkzeug~=2.2.0',
         'Wikipedia-API~=0.5.4'
     ],
-    # extras_require={
-    #     'test': ['pytest', 'coverage'],
-    # },
-    # package_data={
-    #     'sample': ['example_data.csv'],
-    # },
-    # entry_points={
-    #     'runners': [
-    #         'sample=sample:main',
-    #     ]
-    # }
 )
