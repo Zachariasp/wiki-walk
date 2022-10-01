@@ -13,12 +13,8 @@ function App() {
   const [mainWord, setMainWord] = useState(cloudData.start);
   const [cloudWords, setCloudWords] = useState(cloudData.data);
   const [currentWord, setCurrentWord] = useState([cloudData.start]);
-  // const [wikiWords, setWikiWords] = useState();
-
-
   
   const handleClick = (tagValue) => {
-    // e.preventDefault();
     try {
       setCloudWords(cloudWords === cloudData.data ? cloudData.newData : cloudData.data);
 
@@ -39,9 +35,7 @@ function App() {
   );
 
   useEffect(() => {
-    // setCloudWords();
     setMainWord(cloudData.start);
-    // setWikiWords(cloudController());
   }, [cloudWords]);
   
   return (

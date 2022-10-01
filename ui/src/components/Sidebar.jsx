@@ -1,5 +1,3 @@
-// import { cloudStart, cloudFinish } from "../Word-Cloud/cloudData";
-
 
 function Sidebar(props) {
 const {start, current, finish } = props;
